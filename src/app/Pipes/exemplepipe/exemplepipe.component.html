@@ -1,0 +1,9 @@
+<div class="container">
+    <ul class="list-group">
+      <li class="list-group-item">Titre :{{course.titre | lowercase| uppercase }} </li>
+      <li class="list-group-item">Avis : {{course.avis | number: '2.1-1'}} </li>
+      <li class="list-group-item">Participations : {{course.participations}} </li>
+      <li class="list-group-item">Prix: {{course.prix | currency : 'EUR'}}</li>
+      <li class="list-group-item">Date : {{course.publicationDate |date : 'yyy-mm-dd'}} </li>
+    </ul>
+  </div>

@@ -1,0 +1,17 @@
+<ul class="nav btn-group">
+    <li [class.active]="viewCourse  == 'Laravel'" ><a (click)="viewCourse = 'Laravel'">Laravel</a></li>
+    <li [class.active]="viewCourse  == 'Angular'" ><a (click)="viewCourse = 'Angular'">Angular</a></li>
+    <li [class.active]="viewCourse  == 'Symfony'" ><a (click)="viewCourse = 'Symfony'" >Symfony</a></li>
+    
+  </ul>
+  
+  
+   <div [ngSwitch]="viewCourse">
+     <div *ngSwitchCase="'Laravel'"> Laravel course</div>
+     <div *ngSwitchCase="'Angular'">Angular course </div>
+     <div *ngSwitchCase="'Symfony'">Symfony course</div>
+     <div *ngSwitchDefault>Autre chose</div>
+   </div>
+  
+   <button type="button" class="btn btn-primary">Primary</button>
+  
